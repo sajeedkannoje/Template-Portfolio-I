@@ -1,0 +1,316 @@
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+
+}
+
+/* #bg-effect{
+  height: 75vh;
+} */
+#universe {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 50vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(356deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
+  z-index: -1;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+#canv {
+  position: absolute;
+  display: block;
+
+  width: 100%;
+  height: 50vh;
+  z-index: -2;
+  padding: 0px;
+  margin: 0px;
+}
+
+#canvas {
+  position: absolute;
+  display: block;
+
+  width: 100vw;
+  height: 50vh;
+  z-index: -3;
+  padding: 0px;
+  margin: 0px;
+
+
+}
+
+.navba {
+  height: 30vh;
+}
+
+.navb {
+  z-index: 1;
+  color: white;
+
+}
+
+.profilePic img {
+
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  width: 300px;
+
+
+}
+
+
+.info h1 {
+  font-family: monospace;
+  letter-spacing: 2px;
+  font-size: 45px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-right: .15em solid rgb(255, 255, 255);
+  white-space: nowrap;
+  margin: 0 auto;
+  /* letter-spacing: .15em; */
+  animation: typing 3.5s steps(40, end),
+    blink-caret 3.5s 1;
+
+}
+
+/* The typewriter cursor effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+
+@keyframes blink-caret {
+
+
+  0% {
+    border-color: #3a3a3a;
+
+  }
+
+  60% {
+    border-color: #3a3a3a;
+  }
+
+  100% {
+    border-color: #F8F9FA;
+  }
+
+
+}
+
+.info h2 {
+  font-family: Couriers;
+  font-size: 35px;
+  text-shadow: 1px 2px 5px black;
+}
+
+@media screen and (max-width: 601px) {
+
+
+  .info h1 {
+    font-size: 28px;
+  }
+
+  .info h2 {
+    font-size: 20px;
+  }
+
+  #universe {
+    height: 40vh;
+  }
+
+  #canv {
+    height: 40vh;
+  }
+
+  #canvas {
+    height: 40vh;
+  }
+
+  .navba {
+    height: 25vh;
+  }
+
+  .profilePic img {
+    width: 250px;
+  }
+
+}
+
+
+.c1 {
+  border: 4px solid red;
+}
+
+.r1 {
+  border: 4px solid blue;
+
+}
+
+.col1 {
+  border: 4px solid green;
+
+}
+
+.info-anim {
+  height: 50px;
+}
+
+
+.Iam {
+
+  font: normal 40px/50px Montserrat, sans-serif;
+  margin: 0 auto;
+  color: #999;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -0);
+
+
+}
+
+.Iam b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  top: 0px;
+
+}
+
+.Iam .innerIam {
+  display: inline-block;
+  color: #6b6b6b;
+  position: relative;
+  white-space: nowrap;
+
+  top: 0;
+  left: 0;
+  animation: move 10s infinite 2s;
+}
+
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+
+  20% {
+    top: -50px;
+  }
+
+  40% {
+    top: -100px;
+  }
+
+  60% {
+    top: -150px;
+  }
+
+  80% {
+    top: -200px;
+  }
+}
+
+.frontend-icon {
+  border-radius: 50px;
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  position: relative;
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  top: -35px;
+
+
+}
+
+.frontend-icon i {
+  color: white;
+  line-height: 85px;
+
+
+}
+
+.html {
+  color: orangered;
+}
+
+.card i {
+  font-size: 66px;
+}
+
+.card:hover {
+  box-shadow: -1px 1px 10px #c0c0c0;
+
+}
+
+.css {
+  color: #254BDD;
+}
+
+.javascript {
+  color: #DE8245;
+}
+
+.bootstrap {
+  color: #563D7C;
+}
+
+.sql {
+  color: #006EC0;
+}
+
+.php {
+  color: #2745d8;
+}
+
+.angular {
+  color: #BD0E2D;
+}
+
+.react {
+  color: #00C6F7;
+}
+
+.pro1 {
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  background-color: #666666b2;
+  text-align: center;
+  line-height: 150px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.pro1 h1 {
+  position: relative;
+  color: white;
+  font-size: 30px;
+  top: 30px;
+
+}
+
+.pro1:hover {
+  height: 100%;
+  opacity: 1;
+}
