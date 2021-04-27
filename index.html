@@ -23,34 +23,35 @@
       <canvas id="universe"></canvas>
       <canvas id="canv"></canvas>
       <canvas id="canvas"></canvas>
+      <div class="wrapper">
+        <div id="container"></div>
+        </div>
+    
     </div>
 
     <!-- *************** TOP BAR ************* -->
 
-    <div class="container navba">
+    <div class="navba position-static">
 
-      <div class="row  justify-content-center">
-        <div class="col-sm-1 col-3">
-          <a href="#home"><img class="py-2 " src="bug.png" alt="" srcset="" width="60px">
-          </a>
+      <nav class="navbar navbar-expand-lg  navbar-dark bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="bug.png" width="60px" alt="" srcset=""></a>
 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link text-white" href="#skills">Skills</a>
+              <a class="nav-link text-white" href="#project">Project</a>
+              <a class="nav-link text-white" href="#resume"  aria-disabled="true">Social</a>
+              <a class="nav-link text-white" href="#resume" aria-disabled="true">Resume</a>
+
+            </div>
+          </div>
         </div>
-
-        <div class="col-sm-11 d-sm-block d-none  ">
-          <ul class="nav  navb justify-content-sm-end justify-content-left ">
-
-            <li class="nav-item"><a href="#home" class="nav-link active text-white ">HOME</a></li>
-            <li class="nav-item"><a href="#skills" class="nav-link text-white">SKILLS</a></li>
-            <li class="nav-item"><a href="#project" class="nav-link text-white">PROJECT</a></li>
-
-            <li class="nav-item"><a href="#resume" class="nav-link text-white">RESUME</a></li>
-            <li class="nav-item"><a href="#social" class="nav-link text-white">CONTACT</a></li>
-
-          </ul>
-        </div>
-
-
-      </div>
+      </nav>
     </div>
 
     <div class="container">
@@ -516,23 +517,21 @@
   </div>
   <!-- Copyright -->
 </footer>
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="container">
+  <div class="row">
+    <div class="col">
+  
+    </div>
+  </div>
+</div>
 <script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="js/index.js">
 </script>
 
 <script>
+
+  
   $("document").ready(function () {
     switch (Math.floor(Math.random() * 6) + 1) {
       case 1:
@@ -560,22 +559,32 @@
 
         break;
       case 5:
-
-
-
         $("#canvas").css({
           "backgroundColor": " #4158D0",
           "backgroundImage": "linearGradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)"
         });
         partical();
         break;
+
+        case 6:
+        $("#container").show(1, function () {
+          $(".wrapper").show(1, function (){
+            sajeed();
+          });
+        
+        });
+        
+        
+        break;
+
       default:
-        moving_bg();
+        
 
     }
 
 
   });
+
 </script>
 </body>
 
